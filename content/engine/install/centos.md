@@ -127,8 +127,8 @@ $ sudo yum-config-manager --add-repo {{% param "download-url-base" %}}/docker-ce
    to your version of CentOS (indicated by the `.el8` suffix in this example).
 
    Install a specific version by its fully qualified package name, which is
-   the package name (`docker-ce`) plus the version string (2nd column),
-   separated by a hyphen (`-`). For example, `docker-ce-3:25.0.0-1.el8`.
+   the package name (`docker-ce`) plus the version string (2nd column) and the arch type (suffix of 1st column, in this example, is `x86_64`),
+   separated by a hyphen (`-`). For example, `docker-ce-3:25.0.0-1.el8.x86_64`.
 
    Replace `<VERSION_STRING>` with the desired version and then run the following
    command to install:
